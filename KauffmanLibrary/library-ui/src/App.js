@@ -10,6 +10,7 @@ class App extends Component {
     };
     
     this.saySomething = this.saySomething.bind(this);
+    this.receiveData = this.receiveData.bind(this);
 };
 
 componentDidMount() {
@@ -19,17 +20,22 @@ componentDidMount() {
       mode: "cors"
     })  
   .then(function(response) {
+    console.log("response");
       if(response.ok) {
           response.json().then(function(data) {
-              console.log(data[0].title.toString);
-              var title = data[0].title.toString;
-              _this.setState({title: title});
-              return data[0].title.toString();
+              console.log(data)
+              console.log(data[0].title);
+              var title = data[0].title;
+              _this.receiveData(title);
+              return data[0].title;
           });
       } 
       return null;
   });
+}
 
+receiveData(data) {
+  this.setState({title: data});
 }
 
 
@@ -47,7 +53,7 @@ componentDidMount() {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <div>{bookTitle}</div>
+        <div>{this.state.title}</div>
       </div>
     );
   }
