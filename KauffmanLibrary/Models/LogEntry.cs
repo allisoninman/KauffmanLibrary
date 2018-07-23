@@ -9,6 +9,6 @@ namespace KauffmanLibrary.Models
     {
         public string Name { get; set; }
         public DateTime Date { get; set; }
-        public Boolean IsCheckingOut { get; set; }
+        public bool IsCheckingOut { get; set; }
     }
 }
