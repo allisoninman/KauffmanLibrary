@@ -9,13 +9,12 @@ namespace KauffmanLibrary.Accessors
 {
     public class BookAccessor : IBookAccessor
     {
-        private MongoClient _client;
-        private IMongoDatabase _db;
+        private readonly IMongoDatabase _db;
 
         public BookAccessor()
         {
-            _client = new MongoClient("mongodb://localhost:27017");
-            _db = _client.GetDatabase("KauffmanLibrary");
+            var client = new MongoClient("mongodb://localhost:27017");
+            _db = client.GetDatabase("KauffmanLibrary");
         }
 
         public IEnumerable<Book> GetAllBooks()
