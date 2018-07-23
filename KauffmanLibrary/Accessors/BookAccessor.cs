@@ -22,7 +22,8 @@ namespace KauffmanLibrary.Accessors
 
         public IEnumerable<Book> GetAllBooks()
         {
-            return _db.GetCollection<Book>("Books").Find(new BsonDocument()).ToList();
+            var result = _db.GetCollection<Book>("Books").Find(new BsonDocument()).ToList();
+            return result;
         }
 
         public bool IsBookCheckedOut(string barcode)

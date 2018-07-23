@@ -19,5 +19,14 @@ namespace KauffmanLibrary.Models
 
         [BsonElement("Barcode")]
         public string Barcode { get; set; }
+
+        [BsonElement("Genres")]
+        public List<string> Genres { get; set; }
+
+        [BsonElement("Ratings")]
+        public List<Rating> Ratings { get; set; }
+
+        [BsonElement("LogEntries")]
+        public List<LogEntry> LogEntries { get; set; }
     }
 }
