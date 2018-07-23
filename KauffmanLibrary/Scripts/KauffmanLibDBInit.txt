@@ -1,0 +1,72 @@
+// Switch to corrrect DB
+use KauffmanLibrary
+
+// Create a collection
+db.createCollection("Books")
+
+// Add Data
+db.Books.insert({"Title": "Hit Refresh", 
+					"Author": "Satya Nadella", 
+					"Barcode": "HitRefresh", 
+					"Genres": ["business"], 
+					"Ratings": [{"Name": "Allison", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Allison", "IsCheckingOut": true, "Date": new Date("2016-05-18T16:00:00Z")}]
+					})
+					
+db.Books.insert({"Title": "You are a Badass", 
+					"Author": "Jen Sincero", 
+					"Barcode": "Badass", 
+					"Genres": ["motivation"], 
+					"Ratings": [{"Name": "Gauri", "RatingValue": 5},
+								{"Name": "Allison", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Allison", "IsCheckingOut": true, "Date": new Date("2018-05-18T20:00:00Z")}]
+					})
+					
+db.Books.insert({"Title": "Feminist Fight Club", 
+					"Author": "Jessica Bennett", 
+					"Barcode": "FFC", 
+					"Genres": ["motivation", "female empowerment"], 
+					"Ratings": [{"Name": "Allison", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Allison", "IsCheckingOut": true, "Date": new Date("2018-05-18T20:00:00Z")},
+								   {"Name": "Allison", "IsCheckingOut": false, "Date": new Date("2018-05-20T20:00:00Z")}]
+					})
+					
+db.Books.insert({"Title": "Thrive", 
+					"Author": "Arianna Huffington", 
+					"Barcode": "Thrive", 
+					"Genres": ["wellness"], 
+					"Ratings": [{"Name": "Allison", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Allison", "IsCheckingOut": true, "Date": new Date("2018-05-18T20:00:00Z")},
+								   {"Name": "Allison", "IsCheckingOut": false, "Date": new Date("2018-05-20T20:00:00Z")},
+								   {"Name": "Gauri", "IsCheckingOut": true, "Date": new Date("2018-05-22T20:00:00Z")}]
+					})
+
+db.Books.insert({"Title": "Lean In", 
+					"Author": "Sheryl Sandberg", 
+					"Barcode": "LeanIn", 
+					"Genres": ["female empowerment"], 
+					"Ratings": [{"Name": "Gauri", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Gauri", "IsCheckingOut": true, "Date": new Date("2016-05-18T16:00:00Z")}]
+					})
+
+db.Books.insert({"Title": "Creative Confidence", 
+					"Author": "Dave Kelley", 
+					"Barcode": "Creative Confidence", 
+					"Genres": ["business", "innovation"], 
+					"Ratings": [{"Name": "Allison", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Gauri", "IsCheckingOut": true, "Date": new Date("2018-05-18T20:00:00Z")},
+								   {"Name": "Gauri", "IsCheckingOut": false, "Date": new Date("2018-05-20T20:00:00Z")}]
+					})
+					
+db.Books.insert({"Title": "Shoe Dog", 
+					"Author": "Phil Knight", 
+					"Barcode": "ShoeDog", 
+					"Genres": ["business"], 
+					"Ratings": [{"Name": "Allison", "RatingValue": 5}],
+					"LogEntries": [{"Name": "Gauri", "IsCheckingOut": true, "Date": new Date("2018-05-18T20:00:00Z")},
+								   {"Name": "Gauri", "IsCheckingOut": false, "Date": new Date("2018-05-20T20:00:00Z")},
+								   {"Name": "Allison", "IsCheckingOut": true, "Date": new Date("2018-05-22T20:00:00Z")},
+								   {"Name": "Allison", "IsCheckingOut": false, "Date": new Date("2018-05-23T20:00:00Z")}]
+					})
+					
+					

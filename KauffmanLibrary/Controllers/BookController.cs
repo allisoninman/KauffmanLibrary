@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using KauffmanLibrary.Accessors;
+using KauffmanLibrary.Engines;
 using KauffmanLibrary.Models;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace KauffmanLibrary.Controllers
 { 
@@ -15,18 +11,24 @@ namespace KauffmanLibrary.Controllers
     public class BookController : Controller
     {
 
-        private readonly BookAccessor _bookAccessor;
+        private readonly IBookEngine _bookEngine;
 
-        public BookController()
+        public BookController(IBookEngine bookEngine)
         {
-            _bookAccessor = new BookAccessor();
+            _bookEngine = bookEngine;
         }
 
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<Book> Get()
         {
-            return _bookAccessor.GetAllBooks();
+            return _bookEngine.GetAllBooks();
+        }
+
+        [HttpPost]
+        public string UpdateStatus([FromBody]string barcode, [FromBody] string name)
+        {
+            return "success";
         }
     }
 }
