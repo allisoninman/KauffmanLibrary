@@ -12,3 +12,17 @@ C:\Users\Allison\Documents\Visual Studio 2017\Projects\KauffmanLibrary\KauffmanL
 C:\Users\Allison\Documents\Visual Studio 2017\Projects\KauffmanLibrary\KauffmanLibrary\bin\Debug\netcoreapp2.1\KauffmanLibrary.pdb
 C:\Users\Allison\Documents\Visual Studio 2017\Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.dll
 C:\Users\Allison\Documents\Visual Studio 2017\Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.pdb
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\bin\Debug\netcoreapp2.1\KauffmanLibrary.deps.json
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\bin\Debug\netcoreapp2.1\KauffmanLibrary.runtimeconfig.json
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\bin\Debug\netcoreapp2.1\KauffmanLibrary.runtimeconfig.dev.json
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\bin\Debug\netcoreapp2.1\KauffmanLibrary.dll
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\bin\Debug\netcoreapp2.1\KauffmanLibrary.pdb
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.csprojAssemblyReference.cache
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.csproj.CoreCompileInputs.cache
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.RazorAssemblyInfo.cache
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.RazorAssemblyInfo.cs
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.AssemblyInfoInputs.cache
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.AssemblyInfo.cs
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.RazorTargetAssemblyInfo.cache
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.dll
+C:\Users\gauri\Documents\Personal Projects\KauffmanLibrary\KauffmanLibrary\obj\Debug\netcoreapp2.1\KauffmanLibrary.pdb
