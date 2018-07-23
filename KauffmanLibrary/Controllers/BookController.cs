@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using KauffmanLibrary.Accessors;
 using KauffmanLibrary.Models;
+using Microsoft.AspNetCore.Http;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,6 +28,12 @@ namespace KauffmanLibrary.Controllers
         public IEnumerable<Book> Get()
         {
             return _bookAccessor.GetAllBooks();
+        }
+
+        [HttpPost]
+        public string UpdateStatus([FromBody]string barcode, [FromBody] string name)
+        {
+            return "success";
         }
     }
 }

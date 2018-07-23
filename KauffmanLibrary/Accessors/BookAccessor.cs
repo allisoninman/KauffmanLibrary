@@ -24,5 +24,16 @@ namespace KauffmanLibrary.Accessors
         {
             return _db.GetCollection<Book>("Books").Find(new BsonDocument()).ToList();
         }
+
+        public bool IsBookCheckedOut(string barcode)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddLogEntry(string barcode, string name, string isCheckingOut)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
