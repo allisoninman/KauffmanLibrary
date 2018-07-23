@@ -1,4 +1,5 @@
 ﻿using KauffmanLibrary.Accessors;
+using KauffmanLibrary.Engines;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,7 @@ namespace KauffmanLibrary
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IBookAccessor, BookAccessor>();
+            services.AddTransient<IBookEngine, BookEngine>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

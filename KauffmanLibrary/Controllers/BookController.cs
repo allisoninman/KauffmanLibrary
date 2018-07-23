@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using KauffmanLibrary.Accessors;
+using KauffmanLibrary.Engines;
 using KauffmanLibrary.Models;
 
 namespace KauffmanLibrary.Controllers
@@ -10,18 +11,18 @@ namespace KauffmanLibrary.Controllers
     public class BookController : Controller
     {
 
-        private readonly IBookAccessor _bookAccessor;
+        private readonly IBookEngine _bookEngine;
 
-        public BookController(IBookAccessor bookAccessor)
+        public BookController(IBookEngine bookEngine)
         {
-            _bookAccessor = bookAccessor;
+            _bookEngine = bookEngine;
         }
 
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<Book> Get()
         {
-            return _bookAccessor.GetAllBooks();
+            return _bookEngine.GetAllBooks();
         }
 
         [HttpPost]
