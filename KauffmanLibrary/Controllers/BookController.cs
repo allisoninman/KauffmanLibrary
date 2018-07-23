@@ -10,11 +10,11 @@ namespace KauffmanLibrary.Controllers
     public class BookController : Controller
     {
 
-        private readonly BookAccessor _bookAccessor;
+        private readonly IBookAccessor _bookAccessor;
 
-        public BookController()
+        public BookController(IBookAccessor bookAccessor)
         {
-            _bookAccessor = new BookAccessor();
+            _bookAccessor = bookAccessor;
         }
 
         // GET: api/<controller>

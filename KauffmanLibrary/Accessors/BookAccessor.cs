@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace KauffmanLibrary.Accessors
 {
-    public class BookAccessor
+    public class BookAccessor : IBookAccessor
     {
         private MongoClient _client;
         private IMongoDatabase _db;
