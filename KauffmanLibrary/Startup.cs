@@ -40,7 +40,7 @@ namespace KauffmanLibrary
 
             app.UseHttpsRedirection();
             app.UseCors(
-                options => options.WithOrigins("http://localhost:3001").AllowAnyMethod()
+                options => options.WithOrigins("http://localhost:3000").AllowAnyMethod()
             );
             app.UseMvc();
         }
